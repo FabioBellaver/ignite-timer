@@ -9,6 +9,7 @@
     "lint": "eslint src --ext .ts,.tsx"
   },
   "dependencies": {
+    "date-fns": "^2.28.0",
     "phosphor-react": "^1.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
