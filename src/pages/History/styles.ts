@@ -15,6 +15,8 @@ export const HistoryList = styled.div`
   flex: 1;
   overflow: auto;
   margin-top: 2rem;
+  overflow-y: scroll;
+  max-height: 29.5rem;
 
   table {
     width: 100%;
