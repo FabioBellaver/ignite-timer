@@ -10,13 +10,21 @@ export const HistoryContainer = styled.main`
     color: ${(props) => props.theme['gray-100']};
   }
 `
-
 export const HistoryList = styled.div`
   flex: 1;
   overflow: auto;
   margin-top: 2rem;
   overflow-y: scroll;
   max-height: 29.5rem;
+  ::-webkit-scrollbar {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 60, 66);
+    border-radius: 3px;
+    cursor: move;
+  }
 
   table {
     width: 100%;
@@ -25,6 +33,8 @@ export const HistoryList = styled.div`
   }
 
   th {
+    position: sticky;
+    top: 0;
     background-color: ${(props) => props.theme['gray-600']};
     padding: 1rem;
     text-align: left;
